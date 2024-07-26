@@ -18,6 +18,7 @@ public class Main1 {
 
     }
 
+
     public static boolean canWalk(boolean isWeekend, boolean isRain) {
         return  isWeekend && isRain;
     }

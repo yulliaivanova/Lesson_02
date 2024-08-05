@@ -21,8 +21,8 @@ public class Main {
 
         System.out.println(" Проходимся циклом по массиву");
         for (GeometricalShape currentGeometricalShapes : geometricalShapes) {
-            currentGeometricalShapes.area ();
-            currentGeometricalShapes.perimeter() ;
+            currentGeometricalShapes.getArea ();
+            currentGeometricalShapes.getPerimeter() ;
         }
 
     }

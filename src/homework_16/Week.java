@@ -1,4 +1,4 @@
-package Homework_15;
+package homework_16;
 
 public enum Week {
     Monday("Понедельник"),

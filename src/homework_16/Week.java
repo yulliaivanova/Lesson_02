@@ -1,21 +1,23 @@
 package homework_16;
 
 public enum Week {
-    Monday("Понедельник"),
-    Tuesday("Вторник"),
-    Wednesday("Среда"),
-    Thursday("Четвер"),
-    Friday("Пятница"),
-    Saturday("Суббота"),
-    Sunday("Воскресенье");
-
-    public String getRussianName() {
-        return russianName;
-    }
+    MONDAY("Понедельник"),
+    TUESDAY("Вторник"),
+    WEDNESDAY("Среда"),
+    THURSDAY("Четвер"),
+    FRIDAY("Пятница"),
+    SATURDAY("Суббота"),
+    SUNDAY("Воскресенье");
 
     private String russianName;
     Week(String russianName){
         this.russianName = russianName;
 
     }
+
+    public String getRussianName() {
+        return russianName;
+    }
+
+
 }

@@ -1,4 +1,4 @@
-package lesson_02;
+package homework_02;
 
 public class Cat {
     int age;

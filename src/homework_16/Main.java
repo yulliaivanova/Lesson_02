@@ -3,15 +3,15 @@ package homework_16;
 public class Main {
     public static void main(String[] args) {
 
-        Week dayOfTheWeek = Week.Saturday;
+        Week dayOfTheWeek = Week.SATURDAY;
         String today = "Сегодня";
 
 
         switch (dayOfTheWeek){
-            case Monday, Tuesday, Wednesday, Thursday, Friday:
+            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY:
                 System.out.println( today + " " + dayOfTheWeek.getRussianName());
                 break;
-            case Saturday, Sunday:
+            case SATURDAY, SUNDAY:
                 System.out.println(" Сегодня выходной");
 
 

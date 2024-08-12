@@ -6,10 +6,10 @@ public class Book implements Cloneable {
 
     private int yearOfPublishing;
     private String name;
-    private String author;
-    private Book book;
+    private Author author;
 
-    public Book(int yearOfPublishing, String name, String author) {
+
+    public Book(int yearOfPublishing, String name, Author author) {
         this.yearOfPublishing = yearOfPublishing;
         this.name = name;
         this.author = author;
@@ -40,12 +40,12 @@ public class Book implements Cloneable {
         this.name = name;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
     public void setAuthor(Author author) {
-        this.author = String.valueOf(author);
+        this.author = author;
     }
 
     @Override

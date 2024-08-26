@@ -1,2 +1,33 @@
-package homework_24;public class Main {
+package homework_24;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Main {
+    public static void main(String[] args) {
+        // Создайте класс Parrot (попугай).
+        //У попугая должны быть две целочисленные характеристики - возраст и количество слов, которые он знает.
+        //Попугаи должны уметь сравнивать сами себя с другими попугаями по возрасту (вспомните, какой интерфейс для этого нужен).
+        //Создайте TreeSet из нескольких попугаев и выведите его в консоль. Ожидаемый результат - попугаи отсортированы по возрасту.
+        //Требуется реализовать сортировку попугаев по количеству слов. Создайте для этого ParrotComparator (вспомните,
+        // какой интерфейс для этого нужен).
+        //Компаратор попугаев должен уметь сравнивать попугаев по количеству слов.
+        //Создайте TreeSet попугаев, передав туда объект компаратора, и выведите его в консоль. Ожидаемый результат -
+        // попугаи отсортированы по количеству слов.
+
+       Parrot parrot = new Parrot(2, 15);
+
+        Set<Parrot> parrots = new TreeSet<>();
+        parrots.add(parrot);
+        parrots.add(new Parrot(3,10));
+        parrots.add(new Parrot(2,17));
+
+        for (Parrot currentParrot : parrots){
+            System.out.println(currentParrot);
+        }
+
+
+
+
+    }
 }
